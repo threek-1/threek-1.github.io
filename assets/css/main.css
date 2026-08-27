@@ -212,6 +212,31 @@ p {
   color: var(--heading);
 }
 
+.university {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.university p {
+  margin: 0;
+  text-align: left;
+  line-height: 1.45;
+}
+
+.university-logo {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.uni-rank {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
 .focus-line {
   margin-top: 20px;
   color: var(--muted);
