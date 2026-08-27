@@ -1,0 +1,8 @@
+title: Junkai Kang
+description: Academic homepage of Junkai Kang, an undergraduate chemistry researcher at Tongji University.
+url: "https://threek-1.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+exclude:
+  - README.md

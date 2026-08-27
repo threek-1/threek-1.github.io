@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Photos from research, projects, and campus life by Junkai Kang." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Gallery · Junkai Kang</title>
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <div class="wrapper">
+      <aside class="profile">
+        <button type="button" class="avatar-zoom" aria-label="Enlarge portrait">
+          <img class="avatar" src="../assets/images/avatar.jpg" alt="Portrait of Junkai Kang" width="1400" height="1866" />
+        </button>
+        <h1>Junkai Kang</h1>
+        <p class="position">Undergraduate Researcher<br />in Chemistry</p>
+        <p>Tongji University<br />Shanghai, China</p>
+        <p><a href="mailto:threek@tongji.edu.cn">threek@tongji.edu.cn</a></p>
+
+        <nav class="profile-links" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#publications">Publication</a>
+          <a href="../index.html#research">Research</a>
+          <a class="active" href="./index.html" aria-current="page">Gallery</a>
+          <a href="../assets/files/Junkai_Kang_CV.pdf">CV</a>
+        </nav>
+      </aside>
+
+      <main class="content" id="content">
+        <section>
+          <h2>Gallery</h2>
+          <p>Selected moments from research, presentations, and life beyond the lab.</p>
+
+          <div class="gallery-grid">
+            <figure>
+              <img src="../assets/images/avatar.jpg" alt="Junkai Kang overlooking the sea" width="1400" height="1866" />
+              <figcaption><strong>Summer 2026</strong><br />Between campuses</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/images/lab-work.jpg" alt="A laboratory experiment" width="1800" height="1203" loading="lazy" />
+              <figcaption><strong>At the bench</strong><br />Experimental chemistry</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/images/project-talk.jpg" alt="Junkai Kang presenting a chemistry project" width="1800" height="1203" loading="lazy" />
+              <figcaption><strong>Project presentation</strong><br />Explaining the work</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/images/project-recognition.jpg" alt="Junkai Kang and teammates at a recognition ceremony" width="1800" height="1204" loading="lazy" />
+              <figcaption><strong>Project recognition</strong><br />Tongji University</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <footer>
+          <p><a href="../index.html">Return to homepage</a></p>
+        </footer>
+      </main>
+    </div>
+
+    <dialog class="avatar-lightbox" id="avatar-lightbox" aria-label="Enlarged portrait">
+      <img src="../assets/images/avatar.jpg" alt="Portrait of Junkai Kang" width="1400" height="1866" />
+    </dialog>
+
+    <script>
+      var zoomButtons = document.querySelectorAll(".avatar-zoom");
+      var lightbox = document.getElementById("avatar-lightbox");
+      if (zoomButtons.length && lightbox) {
+        zoomButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            lightbox.showModal();
+          });
+        });
+        lightbox.addEventListener("click", function () {
+          lightbox.close();
+        });
+      }
+    </script>
+  </body>
+</html>
