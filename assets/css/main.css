@@ -317,6 +317,16 @@ p {
   vertical-align: 1px;
 }
 
+.subsection-heading {
+  margin: 36px 0 10px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .publication-title {
   margin-bottom: 8px;
   font-size: 19px;
